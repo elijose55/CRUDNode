@@ -9,8 +9,11 @@
     <ul>
     	<% docs.forEach(function(customer){ %>
     	<li>
+    		<a href="/edit/<%= customer._id %>">
+    			<%= customer.nome%> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    		</a>
     		<a href="/delete/<%= customer._id %>">
-    			<%= customer.nome%>
+    			     APAGAR
     		</a>
     	</li>
     	<% }) %>
