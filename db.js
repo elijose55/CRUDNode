@@ -15,7 +15,7 @@ function insert(customer, callback){
 
 var ObjectId = require("mongodb").ObjectId;
 function findOne(id, callback){  
-    global.conn.collection("customers").find((new ObjectId(id)).toArray(callback));
+    global.conn.collection("customers").find(new ObjectId(id)).toArray(callback);
 }
 
 function update(id, customer, callback){
